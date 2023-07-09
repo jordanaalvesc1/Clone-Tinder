@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .body {
+    background: #f5f7fa;
+    height: 100vh;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    width: 100%;
+    height: 44px;
+  }
+  .navbar i {
+    font-size: 1.5rem;
+    color: #dadfe6;
+  }
+  .navbar i:nth-child(1) {
+    color: #fe466d;
+  }
+  .photo-and-actions {
+    height: calc (100vh-44px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo {
+    width: 98vw;
+    height: 85vh;
+    background: url(photo_tinder.jpeg.jpg) center center/cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    box-shadow: 0 2px 10px 0 rgba(136, 136, 136, 0.77);
+  }
+  .photo-text {
+    padding: 15px;
+    background: rgb(2, 0, 36);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(35, 34, 65, 0) 0%,
+      rgba(0, 0, 0, 0.7) 0%
+    );
+    border-radius: 10px;
+  }
+  .photo-name-and-age {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+  }
+  .photo-name-and-age h2:nth-child(2) {
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  .photo-bio {
+    line-height: 1.7 rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .actions {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin: 1rem 0;
+  }
+  .action {
+    background: white;
+    box-shadow: 0 2px 6px 0 rgba(112, 125, 134, 0.14);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: transform 500ms ease;
+  }
+  .action:hover{
+      cursor: pointer;
+      transform: scale(1.2);
+  }
+  .actions .action:nth-child(1) {
+    color: #fd5068;
+  }
+  .actions .action:nth-child(2) {
+    margin: 0 1rem;
+    color: #2db1ff;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5ram;
+  }
+  .actions .action:nth-child(3) {
+    color: #1be4a1;
+}
+@media (min-width: 1025px){
+    .photo{
+        width: 367px;
+        height: 684px;
+
+    }
+    .navbar{
+        width: 400px;
+        margin: auto;
+
+    }
+}
